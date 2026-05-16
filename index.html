@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClipForge — クリップボードを、もっと自由に。</title>
+    <meta
+      name="description"
+      content="履歴・スクショ・定型文をひとつに。Windows向けの軽量クリップボードマネージャー ClipForge。Cliborの定型文CSVもそのまま取り込めます。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;800&display=swap"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- HERO -->
+    <header class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="./images/hero.png" alt="" />
+      </div>
+      <nav class="nav">
+        <div class="nav-brand">
+          <img class="brand-mark" src="./images/icon.png" alt="ClipForge" />
+          <strong>ClipForge</strong>
+        </div>
+        <a class="nav-cta" href="#download">無料ダウンロード</a>
+      </nav>
+      <div class="hero-inner">
+        <p class="eyebrow">Windows Clipboard, Reimagined</p>
+        <h1>
+          クリップボードを、<br />
+          もっと自由に。
+        </h1>
+        <p class="hero-sub">
+          履歴・範囲スクショ・定型文をひとつのパネルに。<br />
+          上端へカーソルを近づけるだけで呼び出せる、軽量で美しいツール。
+        </p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#download">
+            ダウンロード
+            <span class="btn-meta">Windows 10/11 · 約 5 MB</span>
+          </a>
+          <a class="btn-ghost" href="#features">機能を見る ↓</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- APP SHOWCASE -->
+    <section class="showcase">
+      <div class="showcase-inner">
+        <div class="showcase-frame">
+          <img src="./images/app-mock.png" alt="ClipForge アプリの実画面" />
+        </div>
+        <p class="showcase-caption">
+          上端パネルを開くと、タブで <strong>履歴 / スクショ / 定型文</strong> を切り替え。<br />
+          番号付きカードはクリック1つで貼り付けまで完了します。
+        </p>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="features">
+      <p class="section-eyebrow">CORE FEATURES</p>
+      <h2 class="section-title">日々のコピー&amp;ペーストが、<br />まったく違うものになる。</h2>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <img src="./images/feat-panel.png" alt="ホバーパネル" />
+          <h3>上端ホバーで一発呼び出し</h3>
+          <p>
+            画面上端中央へカーソルを近づけるだけ。常駐は最小限、必要なときだけ静かに現れる軽量パネル。
+          </p>
+        </article>
+        <article class="feature-card">
+          <img src="./images/feat-shot.png" alt="範囲スクショ" />
+          <h3>Windows 標準と連動した範囲スクショ</h3>
+          <p>
+            📷 ボタン or Ctrl+Shift+S で Snipping Tool を起動。撮影画像は自動で履歴へ。サムネ表示・ファイルパス・Markdown コピーまで一気通貫。
+          </p>
+        </article>
+        <article class="feature-card">
+          <img src="./images/feat-snippet.png" alt="定型文管理" />
+          <h3>カテゴリ別の定型文管理</h3>
+          <p>
+            メールの挨拶文、予約チェック、住所、メールアドレス、ショートカットコマンド等…用途別にカテゴリ分け。クリックで即貼付け、編集・並び替え・色分けも自由自在。
+          </p>
+        </article>
+        <article class="feature-card">
+          <img src="./images/feat-history.png" alt="クリップボード履歴" />
+          <h3>Ctrl+C するだけで履歴が貯まる</h3>
+          <p>
+            Windows のクリップボード変更を自動検出して履歴化。あとから検索して再貼付け。「さっきコピーしたあれ」がもう消えない。
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- MIGRATION -->
+    <section class="migration">
+      <div class="migration-inner">
+        <p class="section-eyebrow accent">FROM CLIBOR</p>
+        <h2 class="section-title">Clibor からの<br />乗り換えも簡単。</h2>
+        <p class="migration-lead">
+          Clibor で作った定型文 CSV をそのまま取り込めます。Shift-JIS の文字コードも自動判定し、グループ・タイトル・本文・ホットキーをそのまま引き継ぎます。
+        </p>
+        <div class="migration-steps">
+          <div class="step">
+            <span class="step-num">1</span>
+            <strong>Clibor で CSV エクスポート</strong>
+            <p>「設定 → 定型文 → CSV エクスポート」で書き出し。</p>
+          </div>
+          <div class="step">
+            <span class="step-num">2</span>
+            <strong>ClipForge で取り込み</strong>
+            <p>設定パネル → 「CSV から取り込む」で選択するだけ。</p>
+          </div>
+          <div class="step">
+            <span class="step-num">3</span>
+            <strong>カテゴリ自動再構築</strong>
+            <p>定型文グループはそのままカテゴリとして再現されます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW TO USE -->
+    <section class="howto">
+      <p class="section-eyebrow">HOW IT WORKS</p>
+      <h2 class="section-title">3 ステップで、もう手放せない。</h2>
+      <ol class="howto-list">
+        <li>
+          <strong>インストール</strong>
+          <p>ダウンロードしたインストーラーをダブルクリック。<br />WebView2 と SQLite を内蔵するのでランタイム導入は不要。</p>
+        </li>
+        <li>
+          <strong>上端へホバー</strong>
+          <p>画面中央上端にカーソルを近づけると ClipForge パネルが現れます。<br />Ctrl+Shift+V でも呼び出せます。</p>
+        </li>
+        <li>
+          <strong>カードをクリックで貼付け</strong>
+          <p>履歴・スクショ・定型文。すべて 1 クリックで直前のアプリへ自動貼付け。</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- DOWNLOAD -->
+    <section id="download" class="download">
+      <div class="download-inner">
+        <p class="section-eyebrow accent">GET CLIPFORGE</p>
+        <h2 class="section-title">今すぐ、無料で使えます。</h2>
+        <p class="download-lead">
+          完全無料・広告なし。ローカル SQLite に保存されるので外部送信はありません。
+        </p>
+        <div class="download-buttons">
+          <a class="btn-primary big" href="https://github.com/nkhtnkht-ops/clipforge/releases/latest/download/ClipForge_0.1.0_x64-setup.exe">
+            <span class="btn-label">Windows 用インストーラー</span>
+            <span class="btn-meta">.exe · 約 5 MB · v0.1.0</span>
+          </a>
+          <a class="btn-ghost big" href="https://github.com/nkhtnkht-ops/clipforge/releases/latest/download/ClipForge_0.1.0_x64_ja-JP.msi">
+            <span class="btn-label">MSI パッケージ</span>
+            <span class="btn-meta">企業配布向け · 約 7 MB</span>
+          </a>
+        </div>
+        <ul class="sys-req">
+          <li>Windows 10 (1803 以降) / Windows 11</li>
+          <li>x64 アーキテクチャ</li>
+          <li>WebView2 ランタイム（標準搭載）</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img class="brand-mark" src="./images/icon.png" alt="ClipForge" />
+          <span>ClipForge</span>
+        </div>
+        <p class="footer-note">
+          Crafted by NK · © 2026
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
