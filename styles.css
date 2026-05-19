@@ -377,6 +377,42 @@ p {
   line-height: 1.7;
 }
 
+/* Wide variant: 2-column grid with larger images and dual sub-features */
+.feature-grid-wide {
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 28px;
+}
+
+.feature-card-wide {
+  padding: 24px 28px 32px;
+}
+
+.feature-card-wide img {
+  aspect-ratio: 16 / 9;
+  margin-bottom: 24px;
+}
+
+.feature-card-wide .feature-subgroup {
+  padding-top: 18px;
+  margin-top: 18px;
+  border-top: 1px solid var(--border);
+}
+
+.feature-card-wide .feature-subgroup:first-of-type {
+  padding-top: 0;
+  margin-top: 0;
+  border-top: none;
+}
+
+.feature-card-wide .feature-subgroup h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.feature-card-wide .feature-subgroup p {
+  margin: 0;
+}
+
 /* migration */
 .migration-inner {
   max-width: var(--max);
