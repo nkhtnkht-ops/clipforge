@@ -1,231 +1,315 @@
 <!doctype html>
 <html lang="ja">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ClipForge — クリップボードを、もっと自由に。</title>
     <meta
       name="description"
-      content="履歴・スクショ・定型文をひとつに。Windows向けの軽量クリップボードマネージャー ClipForge。Cliborの定型文CSVもそのまま取り込めます。"
+      content="履歴・スクショ・定型文をひとつのパネルに。Windows 用の軽量クリップボードマネージャー ClipForge。Cliborの定型文CSVもそのまま取り込めます。"
     />
+    <link rel="icon" type="image/png" href="./images/icon.png" />
+    <link rel="apple-touch-icon" href="./images/icon.png" />
+    <meta property="og:title" content="ClipForge — クリップボードを、もっと自由に。" />
+    <meta property="og:description" content="履歴・スクショ・定型文をひとつのパネルに。Windows 用の軽量クリップボードマネージャー。" />
+    <meta property="og:image" content="./images/icon.png" />
+    <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;800&display=swap"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <!-- HERO -->
-    <header class="hero">
-      <div class="hero-bg" aria-hidden="true">
-        <img src="./images/hero.png" alt="" />
-      </div>
-      <nav class="nav">
-        <div class="nav-brand">
-          <img class="brand-mark" src="./images/icon.png" alt="ClipForge" />
-          <strong>ClipForge</strong>
-        </div>
-        <a class="nav-cta" href="#download">無料ダウンロード</a>
-      </nav>
-      <div class="hero-inner">
-        <p class="eyebrow">Windows Clipboard, Reimagined</p>
-        <h1>
-          クリップボードを、<br />
-          もっと自由に。
-        </h1>
-        <p class="hero-sub">
-          履歴・範囲スクショ・定型文をひとつのパネルに。<br />
-          上端へカーソルを近づけるだけで呼び出せる、軽量で美しいツール。
-        </p>
-        <div class="hero-actions">
-          <a class="btn-primary" href="#download">
-            ダウンロード
-            <span class="btn-meta">Windows 10/11 · 約 5 MB</span>
-          </a>
-          <a class="btn-ghost" href="#features">機能を見る ↓</a>
-        </div>
-      </div>
-    </header>
-
-    <!-- APP SHOWCASE -->
-    <section class="showcase">
-      <div class="showcase-inner">
-        <div class="showcase-frame">
-          <img src="./images/app-mock.png" alt="ClipForge アプリの実画面" />
-        </div>
-        <p class="showcase-caption">
-          上端パネルを開くと、タブで <strong>履歴 / スクショ / 定型文</strong> を切り替え。<br />
-          番号付きカードはクリック1つで貼り付けまで完了します。
-        </p>
-      </div>
-    </section>
-
-    <!-- FEATURES -->
-    <section id="features" class="features">
-      <p class="section-eyebrow">CORE FEATURES</p>
-      <h2 class="section-title">日々のコピー&amp;ペーストが、<br />まったく違うものになる。</h2>
-
-      <div class="feature-grid">
-        <article class="feature-card">
-          <img src="./images/feat-panel.png" alt="ホバーパネル" />
-          <h3>上端ホバーで一発呼び出し</h3>
-          <p>
-            画面上端中央へカーソルを近づけるだけ。常駐は最小限、必要なときだけ静かに現れる軽量パネル。
-          </p>
-        </article>
-        <article class="feature-card">
-          <img src="./images/feat-shot.png" alt="範囲スクショ" />
-          <h3>Windows 標準と連動した範囲スクショ</h3>
-          <p>
-            📷 ボタン or Ctrl+Shift+S で Snipping Tool を起動。撮影画像は自動で履歴へ。サムネ表示・ファイルパス・Markdown コピーまで一気通貫。
-          </p>
-        </article>
-        <article class="feature-card">
-          <img src="./images/feat-snippet.png" alt="定型文管理" />
-          <h3>カテゴリ別の定型文管理</h3>
-          <p>
-            メールの挨拶文、予約チェック、住所、メールアドレス、ショートカットコマンド等…用途別にカテゴリ分け。クリックで即貼付け、編集・並び替え・色分けも自由自在。
-          </p>
-        </article>
-        <article class="feature-card">
-          <img src="./images/feat-history.png" alt="クリップボード履歴" />
-          <h3>Ctrl+C するだけで履歴が貯まる</h3>
-          <p>
-            Windows のクリップボード変更を自動検出して履歴化。あとから検索して再貼付け。「さっきコピーしたあれ」がもう消えない。
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <!-- WHAT'S NEW (v0.1.9) -->
-    <section id="whats-new" class="features">
-      <p class="section-eyebrow accent">v0.1.9 NEW</p>
-      <h2 class="section-title">スクショは、撮るだけじゃ<br />終わらない。</h2>
-      <p class="migration-lead" style="text-align:center;margin:0 auto 36px;max-width:640px;">
-        撮影した範囲スクショを、その場で印刷したり、JPEG として保存したり、
-        書き込んでチームに共有したり。ClipForge 1 つで完結します。
-      </p>
-
-      <div class="feature-grid feature-grid-wide">
-        <article class="feature-card feature-card-wide">
-          <img src="./images/feat-annotate.png" alt="注釈エディタ" />
-          <div class="feature-subgroup">
-            <h3>✏️ 本格アノテーションエディタ</h3>
-            <p>
-              ペン・直線（Shift で 45°スナップ）・矢印・長方形・テキスト・消しゴム・選択ツール。描いた図形はクリックで移動・削除自由。8色パレット & 太さスライダー & Undo/Redo 完備。
-            </p>
-          </div>
-          <div class="feature-subgroup">
-            <h3>⚡ 編集中は自動でフルスクリーン</h3>
-            <p>
-              注釈エディタを開くとウィンドウが画面いっぱいに広がり、細かい文字も書き込みやすく。閉じれば元のパネルサイズへ自動復帰。
-            </p>
-          </div>
-        </article>
-        <article class="feature-card feature-card-wide">
-          <img src="./images/feat-rightmenu.png" alt="右クリックから印刷・JPEG保存" />
-          <div class="feature-subgroup">
-            <h3>🖨️ 右クリックで即印刷</h3>
-            <p>
-              スクショの右クリック → 「印刷」で印刷プレビュー（用紙・プリンタ・余白選択可）が即起動。思いついた瞬間に紙へ。
-            </p>
-          </div>
-          <div class="feature-subgroup">
-            <h3>🖼️ JPEG として保存</h3>
-            <p>
-              PNG → JPEG への高品質変換を内蔵。保存先と品質を指定するだけで、メール添付に最適な軽量画像に。もちろんメール本文にそのまま貼り付け可能。
-            </p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- MIGRATION -->
-    <section class="migration">
-      <div class="migration-inner">
-        <p class="section-eyebrow accent">FROM CLIBOR</p>
-        <h2 class="section-title">Clibor からの<br />乗り換えも簡単。</h2>
-        <p class="migration-lead">
-          Clibor で作った定型文 CSV をそのまま取り込めます。Shift-JIS の文字コードも自動判定し、グループ・タイトル・本文・ホットキーをそのまま引き継ぎます。
-        </p>
-        <div class="migration-steps">
-          <div class="step">
-            <span class="step-num">1</span>
-            <strong>Clibor で CSV エクスポート</strong>
-            <p>「設定 → 定型文 → CSV エクスポート」で書き出し。</p>
-          </div>
-          <div class="step">
-            <span class="step-num">2</span>
-            <strong>ClipForge で取り込み</strong>
-            <p>設定パネル → 「CSV から取り込む」で選択するだけ。</p>
-          </div>
-          <div class="step">
-            <span class="step-num">3</span>
-            <strong>カテゴリ自動再構築</strong>
-            <p>定型文グループはそのままカテゴリとして再現されます。</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- HOW TO USE -->
-    <section class="howto">
-      <p class="section-eyebrow">HOW IT WORKS</p>
-      <h2 class="section-title">3 ステップで、もう手放せない。</h2>
-      <ol class="howto-list">
-        <li>
-          <strong>インストール</strong>
-          <p>ダウンロードしたインストーラーをダブルクリック。<br />WebView2 と SQLite を内蔵するのでランタイム導入は不要。</p>
-        </li>
-        <li>
-          <strong>上端へホバー</strong>
-          <p>画面中央上端にカーソルを近づけると ClipForge パネルが現れます。<br />Ctrl+Shift+V でも呼び出せます。</p>
-        </li>
-        <li>
-          <strong>カードをクリックで貼付け</strong>
-          <p>履歴・スクショ・定型文。すべて 1 クリックで直前のアプリへ自動貼付け。</p>
-        </li>
-      </ol>
-    </section>
-
-    <!-- DOWNLOAD -->
-    <section id="download" class="download">
-      <div class="download-inner">
-        <p class="section-eyebrow accent">GET CLIPFORGE</p>
-        <h2 class="section-title">今すぐ、無料で使えます。</h2>
-        <p class="download-lead">
-          完全無料・広告なし。ローカル SQLite に保存されるので外部送信はありません。
-        </p>
-        <div class="download-buttons">
-          <a class="btn-primary big" href="https://github.com/nkhtnkht-ops/clipforge/releases/latest/download/ClipForge_0.1.9_x64-setup.exe">
-            <span class="btn-label">Windows 用インストーラー</span>
-            <span class="btn-meta">.exe · 約 5 MB · v0.1.9</span>
-          </a>
-          <a class="btn-ghost big" href="https://github.com/nkhtnkht-ops/clipforge/releases/latest/download/ClipForge_0.1.9_x64_ja-JP.msi">
-            <span class="btn-label">MSI パッケージ</span>
-            <span class="btn-meta">企業配布向け · 約 7 MB</span>
-          </a>
-        </div>
-        <ul class="sys-req">
-          <li>Windows 10 (1803 以降) / Windows 11</li>
-          <li>x64 アーキテクチャ</li>
-          <li>WebView2 ランタイム（標準搭載）</li>
-        </ul>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        <div class="footer-brand">
-          <img class="brand-mark" src="./images/icon.png" alt="ClipForge" />
+    <div class="site">
+      <header class="topbar">
+        <a class="brand" href="#top">
+          <img class="brand-icon" src="./images/icon.png" alt="ClipForge" />
           <span>ClipForge</span>
-        </div>
-        <p class="footer-note">
-          Crafted by NK · © 2026
-        </p>
-      </div>
-    </footer>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#features">Features</a>
+          <a href="#screenshots">Screenshots</a>
+          <a href="#clibor">From Clibor</a>
+          <a href="#download">Download</a>
+        </nav>
+        <a class="top-action" href="#download">v0.1.10 を入手</a>
+      </header>
+
+      <main id="top">
+        <section class="section hero">
+          <div class="inner hero-grid">
+            <div>
+              <div class="eyebrow">Windows clipboard manager</div>
+              <h1>
+                <span class="headline-line">コピーする、探す、貼る。</span>
+                <span class="soft-break">その間を短く。</span>
+              </h1>
+              <p class="lead">
+                履歴・スクショ・定型文を、ひとつのパネルへ。毎日のコピー作業を増やすのではなく、
+                余計な移動だけを削るための Windows 用クリップボードマネージャーです。
+              </p>
+              <div class="hero-actions">
+                <a class="button primary" href="#download">Windows .exe をダウンロード</a>
+                <a class="button secondary" href="#download">Windows .msi</a>
+              </div>
+              <div class="release-note" aria-label="Release summary">
+                <div>
+                  <b>Version</b>
+                  <span>v0.1.10</span>
+                </div>
+                <div>
+                  <b>Migration</b>
+                  <span>Clibor CSV</span>
+                </div>
+                <div>
+                  <b>Distribution</b>
+                  <span>GitHub Releases</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="inner brand-line">
+            <div class="word">Clipboard refined</div>
+            <p>
+              見た目の派手さより、毎日使う道具としての密度を優先。白黒の余白と実画面で、プロダクトの働きが伝わる構成。
+            </p>
+          </div>
+        </section>
+
+        <section class="section" id="features">
+          <div class="inner">
+            <div class="section-head">
+              <div class="section-no">01</div>
+              <div>
+                <div class="section-kicker">Core workflow</div>
+                <h2 class="section-title">一枚のパネルに、<br />よく使う操作を集約。</h2>
+              </div>
+              <p class="section-copy">
+                履歴を探す、定型文を貼る、スクショを扱う。小さな操作をひとつの流れに揃えることで、
+                Windows の作業テンポを崩しません。
+              </p>
+            </div>
+
+            <div class="showcase">
+              <figure class="app-window">
+                <img src="./images/app-mock.png" alt="ClipForge メインインターフェース" />
+                <figcaption class="caption">
+                  <span>Real application image</span>
+                  <span>History / snippets / search</span>
+                </figcaption>
+              </figure>
+              <div class="callout-stack">
+                <div class="callout">
+                  <b>検索できる履歴</b>
+                  <p>コピーしたテキストや画像を、記憶に頼らず一覧から戻せます。</p>
+                </div>
+                <div class="callout">
+                  <b>定型文を即貼り付け</b>
+                  <p>よく使う文面を整理し、タブ切り替えと検索からすぐに呼び出せます。</p>
+                </div>
+                <div class="callout">
+                  <b>スクショも同じ導線へ</b>
+                  <p>範囲キャプチャと注釈編集を、クリップボード作業の延長に置きます。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="inner">
+            <div class="section-head">
+              <div class="section-no">02</div>
+              <div>
+                <div class="section-kicker">Core features</div>
+                <h2 class="section-title">必要な機能だけを、<br />迷わない名前で。</h2>
+              </div>
+              <p class="section-copy">
+                量産型の横並びカードではなく、操作の目的がすぐ読める4項目に整理。画像に頼りすぎず、
+                実用アプリらしい情報密度で見せます。
+              </p>
+            </div>
+
+            <div class="features">
+              <article class="feature">
+                <div class="feature-num"><span>01</span><span>Panel</span></div>
+                <h3>ホバーパネル</h3>
+                <p>必要な時だけ呼び出し、作業中の画面を大きく塞がずに履歴へアクセス。</p>
+                <span class="mini">quick access</span>
+              </article>
+              <article class="feature">
+                <div class="feature-num"><span>02</span><span>Capture</span></div>
+                <h3>範囲スクショ</h3>
+                <p>画面の一部を切り取り、コピーや保存、注釈編集へ自然につなげます。</p>
+                <span class="mini">range screenshot</span>
+              </article>
+              <article class="feature">
+                <div class="feature-num"><span>03</span><span>Snippet</span></div>
+                <h3>定型文</h3>
+                <p>よく使う挨拶文、案内文、返信文をまとめて、貼り付けまでを短縮。</p>
+                <span class="mini">templates</span>
+              </article>
+              <article class="feature">
+                <div class="feature-num"><span>04</span><span>History</span></div>
+                <h3>履歴</h3>
+                <p>一度コピーした内容を探して再利用。日々の小さな手戻りを減らします。</p>
+                <span class="mini">searchable log</span>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="screenshots">
+          <div class="inner">
+            <div class="section-head">
+              <div class="section-no">03</div>
+              <div>
+                <div class="section-kicker">Screenshot tools</div>
+                <h2 class="section-title">スクショを撮った後の、<br />ひと手間まで。</h2>
+              </div>
+              <p class="section-copy">
+                画像を撮って、少し説明を足して、必要な形式で渡す。スクショ周辺の作業を
+                ClipForge の中で完結しやすくします。
+              </p>
+            </div>
+
+            <div class="new-grid">
+              <article class="release-card">
+                <div class="release-image">
+                  <img src="./images/feat-annotate.png" alt="注釈エディタの画面" />
+                </div>
+                <div class="release-body">
+                  <div>
+                    <h3>注釈エディタ</h3>
+                    <p>キャプチャ画像に矢印・囲み・テキスト・手書きを加え、説明しやすい状態で保存・共有できます。編集中はウィンドウが自動でフルスクリーンに拡張。</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="release-card">
+                <div class="release-image">
+                  <img src="./images/feat-rightmenu.png" alt="右クリックメニューの画面" />
+                </div>
+                <div class="release-body">
+                  <div>
+                    <h3>右クリック印刷 / JPEG</h3>
+                    <p>スクショ履歴から印刷、JPEG 保存、コピーを選択。画像を扱う後工程を短くします。メール本文への直接貼り付けにも対応。</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="clibor">
+          <div class="inner">
+            <div class="section-head">
+              <div class="section-no">04</div>
+              <div>
+                <div class="section-kicker">From Clibor</div>
+                <h2 class="section-title">Clibor の定型文を、<br />そのまま次の環境へ。</h2>
+              </div>
+              <p class="section-copy">
+                既存の定型文資産を捨てずに移行できることは、毎日使う道具では重要です。
+                CSV 取り込みの導線を LP 上でも明確に見せます。
+              </p>
+            </div>
+
+            <div class="process">
+              <div class="process-item">
+                <div class="index">01</div>
+                <h3>CSV を書き出す</h3>
+                <p>Clibor 側で定型文データを CSV としてエクスポートします。</p>
+              </div>
+              <div class="process-item">
+                <div class="index">02</div>
+                <h3>ClipForge へ読み込む</h3>
+                <p>インポート画面から CSV を選び、登録内容を確認します。</p>
+              </div>
+              <div class="process-item">
+                <div class="index">03</div>
+                <h3>すぐに使い始める</h3>
+                <p>日常の貼り付け導線に合わせて、必要な文面を整理できます。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="inner">
+            <div class="section-head">
+              <div class="section-no">05</div>
+              <div>
+                <div class="section-kicker">How it works</div>
+                <h2 class="section-title">
+                  <span class="headline-line">コピー、呼び出し、貼る。</span>
+                  <span class="soft-break">それだけでいい。</span>
+                </h2>
+              </div>
+              <p class="section-copy">
+                LP の説明は増やしすぎず、アプリの使い方が自然に想像できる 3 ステップに絞ります。
+              </p>
+            </div>
+
+            <div class="process">
+              <div class="process-item">
+                <div class="index">01</div>
+                <h3>コピーする</h3>
+                <p>テキスト、画像、スクショをいつもの操作で履歴へ。</p>
+              </div>
+              <div class="process-item">
+                <div class="index">02</div>
+                <h3>呼び出す</h3>
+                <p>パネルから履歴や定型文をすばやく選びます。</p>
+              </div>
+              <div class="process-item">
+                <div class="index">03</div>
+                <h3>貼る</h3>
+                <p>必要な場所へ戻して、作業をそのまま続けます。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section download" id="download">
+          <div class="inner">
+            <div>
+              <div class="section-no">06</div>
+              <h2>Download<br />ClipForge.</h2>
+              <p>
+                最新版 v0.1.10 は GitHub Releases から配布。通常インストーラーと MSI の 2 形式を用意しています。
+              </p>
+            </div>
+            <div class="download-panel">
+              <div class="section-kicker">Latest release</div>
+              <p class="dl-note">
+                通常インストーラーと MSI パッケージを選べます。
+              </p>
+              <a
+                class="button primary"
+                href="https://github.com/nkhtnkht-ops/clipforge/releases/latest/download/ClipForge_0.1.10_x64-setup.exe"
+              >
+                Download for Windows (.exe)
+              </a>
+              <a
+                class="button secondary"
+                href="https://github.com/nkhtnkht-ops/clipforge/releases/latest/download/ClipForge_0.1.10_x64_ja-JP.msi"
+              >
+                Download MSI package (.msi)
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <strong>ClipForge</strong>
+        <span>Windows clipboard manager · Crafted by NK · © 2026</span>
+      </footer>
+    </div>
   </body>
 </html>
