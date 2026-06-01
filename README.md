@@ -12,7 +12,7 @@ https://nkhtnkht-ops.github.io/clipforge/
 
 ## ダウンロード
 [Releases](https://github.com/nkhtnkht-ops/clipforge/releases) から Windows 版インストーラーをダウンロード。
-Mac 版は [ダウンロードページ](https://nkhtnkht-ops.github.io/clipforge/#download) から Apple Silicon 向け zip をダウンロード。
+Mac 版は [ダウンロードページ](https://nkhtnkht-ops.github.io/clipforge/#download) から Apple Silicon 向け DMG をダウンロード。
 
 ## システム要件
 - Windows 10 (1803 以降) / Windows 11、x64、WebView2 ランタイム（標準搭載）
