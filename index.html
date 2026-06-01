@@ -6,12 +6,12 @@
     <title>ClipForge — クリップボードを、もっと自由に。</title>
     <meta
       name="description"
-      content="履歴・スクショ・定型文をひとつのパネルに。Windows 用の軽量クリップボードマネージャー ClipForge。Cliborの定型文CSVもそのまま取り込めます。"
+      content="履歴・スクショ・定型文をひとつのパネルに。Windows / macOS 向けの軽量クリップボードマネージャー ClipForge。Cliborの定型文CSVもそのまま取り込めます。"
     />
     <link rel="icon" type="image/png" href="./images/icon.png" />
     <link rel="apple-touch-icon" href="./images/icon.png" />
     <meta property="og:title" content="ClipForge — クリップボードを、もっと自由に。" />
-    <meta property="og:description" content="履歴・スクショ・定型文をひとつのパネルに。Windows 用の軽量クリップボードマネージャー。" />
+    <meta property="og:description" content="履歴・スクショ・定型文をひとつのパネルに。Windows / macOS 向けの軽量クリップボードマネージャー。" />
     <meta property="og:image" content="./images/icon.png" />
     <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -42,18 +42,18 @@
         <section class="section hero">
           <div class="inner hero-grid">
             <div>
-              <div class="eyebrow">Windows clipboard manager</div>
+              <div class="eyebrow">Windows / macOS clipboard manager</div>
               <h1>
                 <span class="headline-line">コピーする、探す、貼る。</span>
                 <span class="soft-break">その間を短く。</span>
               </h1>
               <p class="lead">
                 履歴・スクショ・定型文を、ひとつのパネルへ。毎日のコピー作業を増やすのではなく、
-                余計な移動だけを削るための Windows 用クリップボードマネージャーです。
+                余計な移動だけを削るための Windows / macOS 向けクリップボードマネージャーです。
               </p>
               <div class="hero-actions">
                 <a class="button primary" href="#download">Windows .exe をダウンロード</a>
-                <a class="button secondary" href="#download">Windows .msi</a>
+                <a class="button secondary" href="#download">Mac版をダウンロード</a>
               </div>
               <div class="release-note" aria-label="Release summary">
                 <div>
@@ -66,7 +66,7 @@
                 </div>
                 <div>
                   <b>Distribution</b>
-                  <span>GitHub Releases</span>
+                  <span>Win / Mac</span>
                 </div>
               </div>
             </div>
@@ -281,13 +281,13 @@
               <div class="section-no">06</div>
               <h2>Download<br />ClipForge.</h2>
               <p>
-                最新版 v0.1.16 は GitHub Releases から配布。通常インストーラーと MSI の 2 形式を用意しています。
+                Windows版 v0.1.16 に加えて、Apple Silicon Mac向けの配布用zipを用意しました。
               </p>
             </div>
             <div class="download-panel">
               <div class="section-kicker">Latest release</div>
               <p class="dl-note">
-                通常インストーラーと MSI パッケージを選べます。
+                Windows は通常インストーラーと MSI、Mac は Apple Silicon 向けの .app zip を選べます。
               </p>
               <a
                 class="button primary"
@@ -301,6 +301,15 @@
               >
                 Download MSI package (.msi)
               </a>
+              <a
+                class="button secondary"
+                href="./downloads/ClipForge_0.1.16_aarch64-mac.zip"
+              >
+                Download for Mac Apple Silicon (.zip)
+              </a>
+              <p class="dl-footnote">
+                Mac版は未署名のため、初回起動時にmacOSの確認が出る場合があります。
+              </p>
             </div>
           </div>
         </section>
@@ -308,7 +317,7 @@
 
       <footer class="footer">
         <strong>ClipForge</strong>
-        <span>Windows clipboard manager · Crafted by NK · © 2026</span>
+        <span>Windows / macOS clipboard manager · Crafted by NK · © 2026</span>
       </footer>
     </div>
   </body>

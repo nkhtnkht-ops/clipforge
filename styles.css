@@ -594,6 +594,13 @@ a {
   line-height: 1.8;
 }
 
+.download-panel .dl-footnote {
+  margin: 16px 0 0;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
 .download-panel .button {
   width: 100%;
   min-height: 58px;
