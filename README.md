@@ -13,7 +13,11 @@ https://nkhtnkht-ops.github.io/clipforge/
 ## ダウンロード
 [Releases](https://github.com/nkhtnkht-ops/clipforge/releases) から Windows 版インストーラーをダウンロード。
 Mac 版は [ダウンロードページ](https://nkhtnkht-ops.github.io/clipforge/#download) から Apple Silicon 向け DMG をダウンロード。
-未notarizeのため、初回起動時は右クリックから「開く」を選んでください。
+未notarizeのため、「壊れている」と表示された場合は Applications へコピー後に次を実行。
+
+```sh
+xattr -dr com.apple.quarantine /Applications/ClipForge.app
+```
 
 ## システム要件
 - Windows 10 (1803 以降) / Windows 11、x64、WebView2 ランタイム（標準搭載）

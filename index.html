@@ -308,7 +308,9 @@
                 Download for Mac Apple Silicon (.dmg)
               </a>
               <p class="dl-footnote">
-                Mac版は未notarizeのため、初回起動時は右クリックから「開く」を選んでください。
+                Mac版は未notarizeのため、「壊れている」と表示された場合はApplicationsへコピー後に
+                <code>xattr -dr com.apple.quarantine /Applications/ClipForge.app</code>
+                を実行してください。
               </p>
             </div>
           </div>
