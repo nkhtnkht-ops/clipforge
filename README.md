@@ -13,7 +13,7 @@ https://nkhtnkht-ops.github.io/clipforge/
 ## ダウンロード
 [Releases](https://github.com/nkhtnkht-ops/clipforge/releases) から Windows 版インストーラーをダウンロード。
 Mac 版は [ダウンロードページ](https://nkhtnkht-ops.github.io/clipforge/#download) から Apple Silicon 向け DMG をダウンロード。
-未notarizeのため、「壊れている」と表示された場合は Applications へコピー後に次を実行。
+未notarizeのため、「開いていません」「検証できません」「壊れている」と表示された場合は Applications へコピー後に次を実行。
 
 ```sh
 xattr -dr com.apple.quarantine /Applications/ClipForge.app
