@@ -19,6 +19,8 @@ Mac 版は [ダウンロードページ](https://nkhtnkht-ops.github.io/clipforg
 xattr -dr com.apple.quarantine /Applications/ClipForge.app
 ```
 
+自動貼り付けには macOS の「プライバシーとセキュリティ」>「アクセシビリティ」で ClipForge の許可が必要。
+
 ## システム要件
 - Windows 10 (1803 以降) / Windows 11、x64、WebView2 ランタイム（標準搭載）
 - macOS 12 以降、Apple Silicon
